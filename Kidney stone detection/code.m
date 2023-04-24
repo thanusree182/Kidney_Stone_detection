@@ -63,10 +63,7 @@ imshow(k);
 M=bwareaopen(k,4);
 %The "bwlabel" function is used to count the number of connected components in the masked image.
 [ya,number]=bwlabel(M);
-%If the number of connected components is greater than
-%or equal to 1, a message is displayed indicating that
-%a stone has been detected. Otherwise, a message is 
-%displayed indicating that no stone has been detected.
+%If the number of connected components is greater than or equal to 1, a message is displayed indicating that a stone has been detected. Otherwise, a message is displayed indicating that no stone has been detected.
 if(number>=1)
     disp('Stone is Detected');
 else
